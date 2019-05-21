@@ -6,7 +6,7 @@ import {
   G,
   Text,
   Rect
-} from 'react-native-svg'
+} from 'expo'
 import _ from 'lodash'
 import AbstractChart from "../abstract-chart"
 import { DAYS_IN_WEEK, MILLISECONDS_IN_ONE_DAY, MONTH_LABELS } from './constants'
