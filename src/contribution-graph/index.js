@@ -14,7 +14,6 @@ import { shiftDate, getBeginningTimeForDate, convertToDate } from './dateHelpers
 
 const SQUARE_SIZE = 20
 const MONTH_LABEL_GUTTER_SIZE = 8
-const paddingLeft = 32
 class ContributionGraph extends AbstractChart {
   constructor(props) {
     super(props)
@@ -203,7 +202,7 @@ class ContributionGraph extends AbstractChart {
         key={index}
         width={squareSize}
         height={squareSize}
-        x={x + paddingLeft}
+        x={x}
         y={y}
         title={this.getTitleForIndex(index)}
         fill={this.getClassNameForIndex(index)}
@@ -237,7 +236,7 @@ class ContributionGraph extends AbstractChart {
         <Text
           key={weekIndex}
           fontSize={12}
-          x={x + paddingLeft}
+          x={x}
           y={y + 8}
           fill={this.props.chartConfig.color(0.5)}
         >
