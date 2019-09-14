@@ -258,6 +258,7 @@ class ContributionGraph extends AbstractChart {
         <Svg
           height={this.props.height}
           width={this.props.width}
+          style={this.props.svgStyle}
         >
           {this.renderDefs({
             width: this.props.width,
